@@ -1,0 +1,30 @@
+<ul>
+  {{ $icon_class_name := .Scratch.Get "icon_class_name"}}
+  {{ if .Description }}
+  {{ .Scratch.Set "description" .Description }}
+  {{ else }}
+  {{ .Scratch.Set "description" .Summary }}
+  {{ end }}
+  {{ $description := .Scratch.Get "description" }}
+  <li>
+    <a class="icon" href="https://telegram.me/share/url?url={{ .Permalink }}&text={{ .Title }}" aria-label="Telegram">
+      <i class="fab fa-telegram {{ $icon_class_name }}" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u={{ .Permalink }}" aria-label="Facebook">
+      <i class="fab fa-facebook {{ $icon_class_name }}" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url={{ .Permalink }}&text={{ .Title }}" aria-label="Twitter">
+      <i class="fab fa-twitter {{ $icon_class_name }}" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url={{ .Permalink }}&title={{ .Title }}"
+      aria-label="Linkedin">
+      <i class="fab fa-linkedin {{ $icon_class_name }}" aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
