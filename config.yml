@@ -1,39 +1,51 @@
 baseURL: 'http://articles.potee.ru/'
-languageCode: 'en-us'
+languageCode: 'ru'
 title: Piece of Script
 theme: cactus
 googleAnalytics: "G-SS325GBRP9"
-menu:
-  main:
-  - name: "Home"
-    url: /
+DefaultContentLanguage: ru
+languages:
+  ru:
+    languageName: Russian
     weight: 1
-  - name: "All Articles"
-    url: "/articles"
-    weight: 2
-  - name: "Categories"
-    url: "/categories"
-    weight: 3
-  - name: "Tags"
-    url: "/tags"
-    weight: 4
-  - name: "About"
-    url: "/about"
-    weight: 5
+    contentDir: content/ru
+    menu:
+      main:
+      - name: "Главная"
+        url: /
+        weight: 1
+      - name: "Все Статьи"
+        url: "/posts"
+        weight: 2
+      - name: "Категории"
+        url: "/categories"
+        weight: 3
+      - name: "Тэги"
+        url: "/tags"
+        weight: 4
+      - name: "О Проекте"
+        url: "/about"
+        weight: 5
 
-params:
-  logo: images/logo.png
-  description: "Hugo is a general-purpose website framework. Technically speaking, Hugo is a static site generator. Unlike systems that dynamically build a page with each visitor request, Hugo builds pages when you create or update your content. Since websites are viewed far more often than they are edited, Hugo is designed to provide an optimal viewing experience for your website’s end users and an ideal writing experience for website authors."
-  mainSectionTitle: "Articles"
-  mainSection: "articles"
-  showAllPostsOnHomePage: false
-  postsOnHomePage: 5
-  tagsOverview: true
-  tocInline: true
-  colortheme: "dark"
-  social:
-    - name: telegram
-      link: https://t.me/pieceofscript
+    params:
+      description: |
+        В этом проекте представлены статьи о **Компьютерных науках** и их нюансах. 
+        Здесь ты сможешь найти полезные материалы по программированию, администрированию, безопасности и много чего ещё.
+        
+        >_«Бороться и искать, найти и не сдаваться... » - В.А. Каверин_
+
+        Результаты бессонные ночей энтузиастов, в погоне за истинной, специально для тебя, дорогой читатель.
+
+      mainSectionTitle: "Статьи"
+      mainSection: "articles"
+      showAllPostsOnHomePage: false
+      postsOnHomePage: 5
+      tagsOverview: true
+      tocInline: true
+      colortheme: "dark"
+      social:
+        - name: telegram
+          link: https://t.me/pieceofscript
 
 markup:
   tableOfContents:

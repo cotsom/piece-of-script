@@ -1,11 +1,5 @@
 <ul>
   {{ $icon_class_name := .Scratch.Get "icon_class_name"}}
-  {{ if .Description }}
-  {{ .Scratch.Set "description" .Description }}
-  {{ else }}
-  {{ .Scratch.Set "description" .Summary }}
-  {{ end }}
-  {{ $description := .Scratch.Get "description" }}
   <li>
     <a class="icon" href="https://telegram.me/share/url?url={{ .Permalink }}&text={{ .Title }}" aria-label="Telegram">
       <i class="fab fa-telegram {{ $icon_class_name }}" aria-hidden="true"></i>

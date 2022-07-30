@@ -1,0 +1,14 @@
+{
+    "list": [
+        {
+            "name": "Potee Platform",
+            "url": "https://platform.potee.ru/",
+            "desc": "Платформа для эмуляции и эксплуатации угроз"
+        },
+        {
+            "name": "Platform Sources",
+            "url": "https://github.com/PoteeDev/potee-platform",
+            "desc": "Репозиторий с исходным кодом платформы"
+        }
+    ]
+}
