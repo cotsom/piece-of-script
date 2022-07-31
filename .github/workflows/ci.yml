@@ -31,4 +31,3 @@ jobs:
           context: .
           push: true
           tags: explabs/piece-of-script:latest
-      -
